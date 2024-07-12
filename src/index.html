@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <p class="Header"><b>Drawing board</b></p>
+    <div class="mainContainer">
+        <div class="buttons" id="selector">
+            <label for="sizeText">Number of boxes in a row:
+                <input id="sizeText" type="text" class="interactable"/>
+            </label>
+            <button type="submit" id="sizeButton" class="interactable">Create grid</button>
+        </div>
+        <div id="gridContainer"></div>
+        <div class="buttons">
+            <button class="interactable" id="opacity">Opacity</button>
+            <button class="interactable" id="eraser">Eraser</button>
+            <button class="interactable" id="randomColor">Random colors</button>
+            <button class="interactable" id="oneColor">One color</button>
+            <label for="colorPicker">Choose a color:
+                <input type="color" id="colorPicker" class="interactable">
+            </label>
+            <button class="interactable" id="fill">Fill all uncolored</button>
+            <button class="interactable" id="clear">Clear</button>
+            <button class="interactable" id="hoverDraw">Hover</button>
+            <button class="interactable" id="clickDraw">Click</button>
+        </div>
+    </div>
+</body>
+</html>
